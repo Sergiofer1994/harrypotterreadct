@@ -5,7 +5,7 @@ function Header() {
         <a className="brand" href="index.html" aria-label="Ir a inicio">
           <img
             className="brand-logo"
-            src="images/logoHarryPotter.png"
+            src="public\img\logoHarryPotter.png"
             alt="Harry Potter"
           />
         </a>
