@@ -1,30 +1,36 @@
-<header class="site-header" id="siteHeader">
-  <div class="header-container">
-    <a class="brand" href="index.html" aria-label="Ir a inicio">
-      <img
-        class="brand-logo"
-        src="images/logoHarryPotter.png"
-        alt="Harry Potter"
-      />
-    </a>
+function Header() {
+  return (
+    <header className="site-header" id="siteHeader">
+      <div className="header-container">
+        <a className="brand" href="index.html" aria-label="Ir a inicio">
+          <img
+            className="brand-logo"
+            src="images/logoHarryPotter.png"
+            alt="Harry Potter"
+          />
+        </a>
 
-    <button
-      class="nav-toggle"
-      type="button"
-      aria-label="Abrir menú"
-      aria-controls="site-nav"
-      aria-expanded="false"
-      id="navToggle"
-    >
-      <span class="nav-toggle-line"></span>
-      <span class="nav-toggle-line"></span>
-      <span class="nav-toggle-line"></span>
-    </button>
+        <button
+          className="nav-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-controls="site-nav"
+          aria-expanded="false"
+          id="navToggle"
+        >
+          <span className="nav-toggle-line"></span>
+          <span className="nav-toggle-line"></span>
+          <span className="nav-toggle-line"></span>
+        </button>
 
-    <nav class="site-nav" id="site-nav">
-      <a class="nav-link" href="#characters" onclick="openCharacters()">Personajes</a>
-      <a class="nav-link" href="#header-container" onclick="openFilters()">Filtros</a>
-      <a class="nav-link" href="#about" onclick="openInfo()">Sobre la API</a>
-    </nav>
-  </div>
-</header>
+        <nav className="site-nav" id="site-nav">
+          <a className="nav-link" href="#characters">Personajes</a>
+          <a className="nav-link" href="#header-container">Filtros</a>
+          <a className="nav-link" href="#about">Sobre la API</a>
+        </nav>
+      </div>
+    </header>
+  )
+}
+
+export default Header
