@@ -1,3 +1,8 @@
+.site-header {
+  width: 100%;
+}
+
+
 :root {
   --hp-gold: #d4af37;
   --hp-gold-soft: rgba(212, 175, 55, 0.4);

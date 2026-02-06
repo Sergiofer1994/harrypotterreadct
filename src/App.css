@@ -1,4 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Crea una clase para contenido limitado si la necesitas después */
+.container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
