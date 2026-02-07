@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import Card from '../Card/Card.jsx'
-
 function Fetchcard() {
     const [characters, setCharacters] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -19,11 +18,10 @@ function Fetchcard() {
     }, []);
 
     if (loading) return <div className="loading">Cargando personajes...</div>;   
-
     return (
         <div className="cards-container">
             {characters.map((char) => (
-                <Card
+                <HarryPotterCard
                     key={char.id || char.name}
                     name={char.name}
                     house={char.house}
@@ -32,6 +30,7 @@ function Fetchcard() {
             ))}
         </div>
     );
+                    
 }
 
 export default Fetchcard;
