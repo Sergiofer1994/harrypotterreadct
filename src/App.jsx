@@ -1,19 +1,18 @@
 import { useState } from 'react'
 import './app.css'
 import Header from './components/Header/Header.jsx'
-import Footer from './components/footer/Footer.jsx'
+import Footer from './components/Footer/Footer.jsx'  // Corregí mayúscula
 import Fetchcard from './components/Fetchcard/Fetchcard.jsx'
 
 function App() {
   return (
-    <>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <h1>App cargada correctamente</h1>
       <Header />
       <Fetchcard />
-      <Footer/>
-      
-    </>
+      <Footer />
+    </div>
   )
 }
-
 
 export default App
