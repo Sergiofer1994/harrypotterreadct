@@ -18,7 +18,6 @@ function Fetchcard() {
             }); 
     }, []);
 
-    // AGREGA ESTE NUEVO useEffect para añadir las clases de las casas
     useEffect(() => {
         const cards = document.querySelectorAll('.card');
         
@@ -33,7 +32,7 @@ function Fetchcard() {
                 else if (houseText.includes('hufflepuff')) card.classList.add('hufflepuff');
             }
         });
-    }, [characters]); // Se ejecuta cuando cambian los personajes
+    }, [characters]); 
 
     if (loading) return <div className="loading">Cargando personajes...</div>;   
 
