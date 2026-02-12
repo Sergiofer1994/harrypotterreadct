@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './components/Header/Header.jsx'
-import Footer from './components/Footer/Footer.jsx'  // Corregí mayúscula
+import Header from './components/header/Header.jsx'
+import Footer from './components/footer/Footer.jsx'  // Corregí mayúscula
 import Fetchcard from './components/Fetchcard/Fetchcard.jsx'
 
 function App() {
